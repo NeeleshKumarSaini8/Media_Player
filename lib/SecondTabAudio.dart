@@ -20,7 +20,6 @@ class _NetworkAudioState extends State<NetworkAudio> {
 
   void initPlayer(){
     audioPlayer = new AudioPlayer();
-    //audioCache = new AudioCache(fixedPlayer: advancedPlayer);
 
     audioPlayer.durationHandler = (d) => setState(() {
       _duration = d;
@@ -52,23 +51,14 @@ class _NetworkAudioState extends State<NetworkAudio> {
   @override
   Widget build(BuildContext context) {
     return Container(
-
-      color: Colors.green.shade100,
-   //   child: Image.asset('india-background.jpg'),
-      
+      color: Colors.green.shade100,      
       child: Column(
-        
-        //children: <Widget>[
-          //Row(
-            //color: Colors.green,
             children: <Widget>[
-              Card(//color: Colors.green,
-              
+              Card(
                 child: Container(
                   width: double.infinity,
                   height: 100,
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
@@ -78,28 +68,18 @@ class _NetworkAudioState extends State<NetworkAudio> {
                           Image.network(
                             'https://github.com/NeeleshKumarSaini8/flutter-task1-images/blob/master/raw.jpg?raw=true',
                              fit: BoxFit.fill,)
-                          //Image.asset('images/jai ho A.R Rehman.jfif',fit: BoxFit.fill,),
                       ),
                       Container(
-                        /*alignment: Alignment.topCenter,
-                        width: 300,
-                        height: 100,
-                      
-                        color: Colors.amber,
-                        padding: EdgeInsets.only(left: 20),
-                        child: Text('Jai Ho'),*/
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: <Widget>[
                             Container(
                               width: 300,
                               height: 66,
-                              //color: Colors.orange,
                               alignment: Alignment.topCenter,
                               child: Column(
                                 children: <Widget>[
                                   Text('Raw',style: TextStyle(
-        //fontSize: 40,
         foreground: Paint()
           ..style = PaintingStyle.stroke
           ..strokeWidth = 1
@@ -108,14 +88,11 @@ class _NetworkAudioState extends State<NetworkAudio> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: <Widget>[
-                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {audioPlayer.play('https://raw.githubusercontent.com/NeeleshKumarSaini8/flutter_audios/master/rawtrim.mp3');
+                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {audioPlayer.play(
+                                    'https://raw.githubusercontent.com/NeeleshKumarSaini8/flutter_audios/master/rawtrim.mp3');
                                                                                   }),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.play_arrow), label: Text('play'),color: Colors.green,),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.pause), label: Text('pause')),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.stop), label: Text('stop')),
                                   IconButton(icon: Icon(Icons.pause), onPressed: () { audioPlayer.pause();}),
                                   IconButton(icon: Icon(Icons.stop), onPressed: () { audioPlayer.stop();}),
-                                //slider(),
                                 ],
                               ),
                                 ],
@@ -123,42 +100,12 @@ class _NetworkAudioState extends State<NetworkAudio> {
 
 
                             ),
-                            /*//Container(
-                              //width: 300,
-                              //height: 34,
-                              //color: Colors.green.shade100,
-                              //child: /*Row(
-                                //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                //children: <Widget>[
-                                  //IconButton(icon: Icon(Icons.play_arrow), onPressed: () {
-                                  									//audioCache.play('Jai Ho A.R. Rahman.mp3');},),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.play_arrow), label: Text('play'),color: Colors.green,),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.pause), label: Text('pause')),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.stop), label: Text('stop')),
-                                  //IconButton(icon: Icon(Icons.pause), onPressed: () {
-                                    //                                    advancedPlayer.pause();
-                                                                       // audio = AudioPlayer();
-                                                                        //audio.pause();
-                                                                },),
-                                 // IconButton(icon: Icon(Icons.stop), onPressed: () {
-                                   //                                     advancedPlayer.stop();
-                                 //                               }),*/
-                                //slider(),
-                               // ],
-                              //),
-                            //)*/
+                            
                           ],
 
                         ),
                       ),
-                        //  Container(
-                          //color: Colors.orange,
-                          //width: 300,
-                        //height: 50,
-                        //alignment: Alignment.bottomLeft,
-                        //child: RaisedButton.icon(onPressed: null, icon: Icon(Icons.play_arrow), label: Text('play'))
-
-                        //  )
+                        
                         ],
                         
                   )
@@ -170,17 +117,15 @@ class _NetworkAudioState extends State<NetworkAudio> {
                   width: 400,
                   height: 100,
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
                         width: 100,
                         height: 100,
-                        child: //Icon(Icons.music_note),
+                        child: 
                           Image.network(
                             'https://github.com/NeeleshKumarSaini8/flutter-task1-images/blob/master/Brock-Lesnar-Suplex-City-Welcomes-You-Authentic-WWE-T-.jpg?raw=true',
                              fit: BoxFit.fill,)
-                          //Image.asset('images/MS Dhoni Besabriyan.jpg',fit: BoxFit.fill,)
                       ),
                       Container(
                         child: Column(
@@ -189,12 +134,10 @@ class _NetworkAudioState extends State<NetworkAudio> {
                             Container(
                               width: 300,
                               height: 66,
-                              //color: Colors.orange,
                               alignment: Alignment.topCenter,
                               child: Column(
                                 children: <Widget>[
                                   Text('Brocklesnar',style: TextStyle(
-                                                  //fontSize: 40,
                                                   foreground: Paint()
                                                   ..style = PaintingStyle.stroke
                                                   ..strokeWidth = 1
@@ -203,7 +146,8 @@ class _NetworkAudioState extends State<NetworkAudio> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: <Widget>[
-                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {audioPlayer.play('https://raw.githubusercontent.com/NeeleshKumarSaini8/flutter_audios/master/Brock-Lesnar-Theme-Song-_Next-Big-Thing-Ringtone%20(0).mp3');
+                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {audioPlayer.play(
+                                    'https://raw.githubusercontent.com/NeeleshKumarSaini8/flutter_audios/master/Brock-Lesnar-Theme-Song-_Next-Big-Thing-Ringtone%20(0).mp3');
                                                                                   }),
                                   IconButton(icon: Icon(Icons.pause), onPressed: () { audioPlayer.pause();}),
                                   IconButton(icon: Icon(Icons.stop), onPressed: () { audioPlayer.stop();}),
@@ -213,13 +157,7 @@ class _NetworkAudioState extends State<NetworkAudio> {
                             ),
 
                             ),
-                            /*Container(
-                              width: 300,
-                              height: 34,
-                              child: slider(),
-                               // ],
-                              //),
-                            )*/
+                            
                           ],
 
                         ),
@@ -235,17 +173,15 @@ class _NetworkAudioState extends State<NetworkAudio> {
                   width: 400,
                   height: 100,
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
                         width: 100,
                         height: 100,
-                        child: //Icon(Icons.music_note),
+                        child: 
                           Image.network(
                             'https://github.com/NeeleshKumarSaini8/flutter-task1-images/blob/master/roman%20reigns.jfif?raw=true',
                              fit: BoxFit.fill,)
-                          //Image.asset('images/Alan Walker Spectre.jfif',fit: BoxFit.fill,)
                       ),
                       Container(
                         child: Column(
@@ -254,12 +190,10 @@ class _NetworkAudioState extends State<NetworkAudio> {
                             Container(
                               width: 300,
                               height: 66,
-                              //color: Colors.orange,
                               alignment: Alignment.topCenter,
                               child: Column(
                                 children: <Widget>[
                                   Text('Roman Reigns',style: TextStyle(
-                                                  //fontSize: 40,
                                                   foreground: Paint()
                                                   ..style = PaintingStyle.stroke
                                                   ..strokeWidth = 1
@@ -268,7 +202,8 @@ class _NetworkAudioState extends State<NetworkAudio> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: <Widget>[
-                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {audioPlayer.play('https://raw.githubusercontent.com/NeeleshKumarSaini8/flutter_audios/master/Roman-Reigns-WWE-The-Truth-Reigns-3rd-Theme-Song.mp3');
+                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {audioPlayer.play(
+                                    'https://raw.githubusercontent.com/NeeleshKumarSaini8/flutter_audios/master/Roman-Reigns-WWE-The-Truth-Reigns-3rd-Theme-Song.mp3');
                                                                                   }),
                                   IconButton(icon: Icon(Icons.pause), onPressed: () { audioPlayer.pause();}),
                                   IconButton(icon: Icon(Icons.stop), onPressed: () { audioPlayer.stop();}),
@@ -278,13 +213,7 @@ class _NetworkAudioState extends State<NetworkAudio> {
                             ),
 
                             ),
-                            /*Container(
-                              width: 300,
-                              height: 34,
-                              child: slider(),
-                               // ],
-                              //),
-                            )*/
+                            
                           ],
 
                         ),
@@ -300,7 +229,6 @@ class _NetworkAudioState extends State<NetworkAudio> {
                   width: 400,
                   height: 100,
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
@@ -309,8 +237,7 @@ class _NetworkAudioState extends State<NetworkAudio> {
                         child: //Icon(Icons.music_note),
                           Image.network(
                             'https://github.com/NeeleshKumarSaini8/flutter-task1-images/blob/master/dean%20ambrose.jfif?raw=true',
-                             fit: BoxFit.fill,)
-                                //Image.asset('images/Believer Imagine Dragons.jpg',fit: BoxFit.fill,)                                    
+                             fit: BoxFit.fill,)                                    
                       ),
                       Container(
                         child: Column(
@@ -319,12 +246,10 @@ class _NetworkAudioState extends State<NetworkAudio> {
                             Container(
                               width: 300,
                               height: 66,
-                              //color: Colors.orange,
                               alignment: Alignment.topCenter,
                               child: Column(
                                 children: <Widget>[
                                   Text('Dean Ambrose',style: TextStyle(
-                                                  //fontSize: 40,
                                                   foreground: Paint()
                                                   ..style = PaintingStyle.stroke
                                                   ..strokeWidth = 1
@@ -333,7 +258,8 @@ class _NetworkAudioState extends State<NetworkAudio> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: <Widget>[
-                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {audioPlayer.play('https://raw.githubusercontent.com/NeeleshKumarSaini8/flutter_audios/master/Dean-Ambrose-Ringtone%20(0).mp3');
+                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {audioPlayer.play(
+                                    'https://raw.githubusercontent.com/NeeleshKumarSaini8/flutter_audios/master/Dean-Ambrose-Ringtone%20(0).mp3');
                                                                                   }),
                                   IconButton(icon: Icon(Icons.pause), onPressed: () { audioPlayer.pause();}),
                                   IconButton(icon: Icon(Icons.stop), onPressed: () { audioPlayer.stop();}),
@@ -343,13 +269,7 @@ class _NetworkAudioState extends State<NetworkAudio> {
                             ),
 
                             ),
-                            /*Container(
-                              width: 300,
-                              height: 34,
-                              child: slider(),
-                               // ],
-                              //),
-                            )*/
+                            
                           ],
 
                         ),
@@ -365,17 +285,15 @@ class _NetworkAudioState extends State<NetworkAudio> {
                   width: 400,
                   height: 100,
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
                         width: 100,
                         height: 100,
-                        child: //Icon(Icons.music_note),
+                        child: 
                           Image.network(
                             'https://github.com/NeeleshKumarSaini8/flutter-task1-images/blob/master/undertaker.jpg?raw=true',
                              fit: BoxFit.fill,)
-                         // Image.asset('images/Bharat Manikarnika.jfif',fit: BoxFit.fill,)
                       ),
                       Container(
                         child: Column(
@@ -384,12 +302,10 @@ class _NetworkAudioState extends State<NetworkAudio> {
                             Container(
                               width: 300,
                               height: 66,
-                              //color: Colors.orange,
                               alignment: Alignment.topCenter,
                               child: Column(
                                 children: <Widget>[
                                   Text('Undertaker',style: TextStyle(
-                                                  //fontSize: 40,
                                                   foreground: Paint()
                                                   ..style = PaintingStyle.stroke
                                                   ..strokeWidth = 1
@@ -398,7 +314,8 @@ class _NetworkAudioState extends State<NetworkAudio> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: <Widget>[
-                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {audioPlayer.play('https://raw.githubusercontent.com/NeeleshKumarSaini8/flutter_audios/master/The-Undertaker-WWE-Theme-Song.mp3');
+                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {audioPlayer.play(
+                                    'https://raw.githubusercontent.com/NeeleshKumarSaini8/flutter_audios/master/The-Undertaker-WWE-Theme-Song.mp3');
                                                                                   }),
                                   IconButton(icon: Icon(Icons.pause), onPressed: () { audioPlayer.pause();}),
                                   IconButton(icon: Icon(Icons.stop), onPressed: () { audioPlayer.stop();}),
@@ -408,13 +325,7 @@ class _NetworkAudioState extends State<NetworkAudio> {
                             ),
 
                             ),
-                            /*Container(
-                              width: 300,
-                              height: 34,
-                              child: slider(),
-                               // ],
-                              //),
-                            )*/
+                            
                           ],
 
                         ),
@@ -434,10 +345,7 @@ class _NetworkAudioState extends State<NetworkAudio> {
                 ),
               )
             ],
-            
-          //)
-        //],
-        
+ 
       ),
     
     );
