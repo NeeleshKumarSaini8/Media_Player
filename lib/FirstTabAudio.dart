@@ -1,7 +1,3 @@
-//import 'package:audioplayers/audio_cache.dart';
-//import 'package:audioplayers/audioplayers.dart';
-//import 'package:flutter/material.dart';
-
 import 'package:audioplayers/audio_cache.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
@@ -95,53 +91,33 @@ class _AssetsAudioState extends State<AssetsAudio> {
   Widget build(BuildContext context) {
     return Container(
       
-      color: Colors.green.shade100,
-   //   child: Image.asset('india-background.jpg'),
-      
+      color: Colors.green.shade100,      
       child: Column(
-        
-        //children: <Widget>[
-          //Row(
-            //color: Colors.green,
             children: <Widget>[
-              Card(//color: Colors.green,
-              
+              Card(
                 child: Container(
                   width: 400,
                   height: 100,
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
                         width: 100,
                         height: 100,
-                        child: //Icon(Icons.music_note),
-                          //Image.network(
-                            //'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcST9p6BnmYHfVDlt_z_wSe_rjl57PyzxBJOhg&usqp=CAU',
-                             //fit: BoxFit.fill,)
+                        child: 
                           Image.asset('images/jai ho A.R Rehman.jfif',fit: BoxFit.fill,),
                       ),
                       Container(
-                        /*alignment: Alignment.topCenter,
-                        width: 300,
-                        height: 100,
-                      
-                        color: Colors.amber,
-                        padding: EdgeInsets.only(left: 20),
-                        child: Text('Jai Ho'),*/
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: <Widget>[
                             Container(
                               width: 300,
                               height: 66,
-                              //color: Colors.orange,
                               alignment: Alignment.topCenter,
                               child: Column(
                                 children: <Widget>[
                                   Text('Jai Ho A.R. Rahman',style: TextStyle(
-        //fontSize: 40,
         foreground: Paint()
           ..style = PaintingStyle.stroke
           ..strokeWidth = 1
@@ -152,61 +128,24 @@ class _AssetsAudioState extends State<AssetsAudio> {
                                 children: <Widget>[
                                   IconButton(icon: Icon(Icons.play_arrow), onPressed: () {
                                   									audioCache.play('Jai Ho A.R. Rahman.mp3');},),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.play_arrow), label: Text('play'),color: Colors.green,),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.pause), label: Text('pause')),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.stop), label: Text('stop')),
                                   IconButton(icon: Icon(Icons.pause), onPressed: () {
                                                                         advancedPlayer.pause();
-                                                                       // audio = AudioPlayer();
-                                                                        //audio.pause();
                                                                 },),
                                   IconButton(icon: Icon(Icons.stop), onPressed: () {
                                                                         advancedPlayer.stop();
                                                                 }),
-                                //slider(),
                                 ],
                               ),
                                 ],
                             ),
 
-
                             ),
-                            /*//Container(
-                              //width: 300,
-                              //height: 34,
-                              //color: Colors.green.shade100,
-                              //child: /*Row(
-                                //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                //children: <Widget>[
-                                  //IconButton(icon: Icon(Icons.play_arrow), onPressed: () {
-                                  									//audioCache.play('Jai Ho A.R. Rahman.mp3');},),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.play_arrow), label: Text('play'),color: Colors.green,),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.pause), label: Text('pause')),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.stop), label: Text('stop')),
-                                  //IconButton(icon: Icon(Icons.pause), onPressed: () {
-                                    //                                    advancedPlayer.pause();
-                                                                       // audio = AudioPlayer();
-                                                                        //audio.pause();
-                                                                },),
-                                 // IconButton(icon: Icon(Icons.stop), onPressed: () {
-                                   //                                     advancedPlayer.stop();
-                                 //                               }),*/
-                                //slider(),
-                               // ],
-                              //),
-                            //)*/
+                           
                           ],
 
                         ),
                       ),
-                        //  Container(
-                          //color: Colors.orange,
-                          //width: 300,
-                        //height: 50,
-                        //alignment: Alignment.bottomLeft,
-                        //child: RaisedButton.icon(onPressed: null, icon: Icon(Icons.play_arrow), label: Text('play'))
-
-                        //  )
+                        
                         ],
                         
                   )
@@ -218,16 +157,12 @@ class _AssetsAudioState extends State<AssetsAudio> {
                   width: 400,
                   height: 100,
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
                         width: 100,
                         height: 100,
-                        child: //Icon(Icons.music_note),
-                          //Image.network(
-                            //'https://m.media-amazon.com/images/M/MV5BZjAzZjZiMmQtMDZmOC00NjVmLTkyNTItOGI2Mzg4NTBhZTA1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg',
-                            // fit: BoxFit.fill,)
+                        child: 
                           Image.asset('images/MS Dhoni Besabriyan.jpg',fit: BoxFit.fill,)
                       ),
                       Container(
@@ -237,12 +172,10 @@ class _AssetsAudioState extends State<AssetsAudio> {
                             Container(
                               width: 300,
                               height: 66,
-                              //color: Colors.orange,
                               alignment: Alignment.topCenter,
                               child: Column(
                                 children: <Widget>[
                                   Text('Besabriyaan',style: TextStyle(
-                                                  //fontSize: 40,
                                                   foreground: Paint()
                                                   ..style = PaintingStyle.stroke
                                                   ..strokeWidth = 1
@@ -265,13 +198,6 @@ class _AssetsAudioState extends State<AssetsAudio> {
                             ),
 
                             ),
-                            /*Container(
-                              width: 300,
-                              height: 34,
-                              child: slider(),
-                               // ],
-                              //),
-                            )*/
                           ],
 
                         ),
@@ -287,16 +213,12 @@ class _AssetsAudioState extends State<AssetsAudio> {
                   width: 400,
                   height: 100,
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
                         width: 100,
                         height: 100,
-                        child: //Icon(Icons.music_note),
-                          //Image.network(
-                           // 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxjEo4nj9LGNXEosyVuYUV6mi3JzrGAmxZhg&usqp=CAU',
-                            // fit: BoxFit.fill,)
+                        child: 
                           Image.asset('images/Alan Walker Spectre.jfif',fit: BoxFit.fill,)
                       ),
                       Container(
@@ -306,12 +228,10 @@ class _AssetsAudioState extends State<AssetsAudio> {
                             Container(
                               width: 300,
                               height: 66,
-                              //color: Colors.orange,
                               alignment: Alignment.topCenter,
                               child: Column(
                                 children: <Widget>[
                                   Text('Alan Walker Spectre',style: TextStyle(
-                                                  //fontSize: 40,
                                                   foreground: Paint()
                                                   ..style = PaintingStyle.stroke
                                                   ..strokeWidth = 1
@@ -334,13 +254,7 @@ class _AssetsAudioState extends State<AssetsAudio> {
                             ),
 
                             ),
-                            /*Container(
-                              width: 300,
-                              height: 34,
-                              child: slider(),
-                               // ],
-                              //),
-                            )*/
+                            
                           ],
 
                         ),
@@ -356,16 +270,12 @@ class _AssetsAudioState extends State<AssetsAudio> {
                   width: 400,
                   height: 100,
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
                         width: 100,
                         height: 100,
-                        child: //Icon(Icons.music_note),
-                          //Image.network(
-                            //'https://s.yimg.com/ny/api/res/1.2/eGrSgD4L9YOr_ABP4qTBdg--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/rollingstone.com/b5cfc47e8065ac69e01424aaf7c1d3ac',
-                             //fit: BoxFit.fill,)
+                        child: 
                                 Image.asset('images/Believer Imagine Dragons.jpg',fit: BoxFit.fill,)                                    
                       ),
                       Container(
@@ -375,12 +285,10 @@ class _AssetsAudioState extends State<AssetsAudio> {
                             Container(
                               width: 300,
                               height: 66,
-                              //color: Colors.orange,
                               alignment: Alignment.topCenter,
                               child: Column(
                                 children: <Widget>[
                                   Text('Believer Imagine Dragons',style: TextStyle(
-                                                  //fontSize: 40,
                                                   foreground: Paint()
                                                   ..style = PaintingStyle.stroke
                                                   ..strokeWidth = 1
@@ -403,13 +311,7 @@ class _AssetsAudioState extends State<AssetsAudio> {
                             ),
 
                             ),
-                            /*Container(
-                              width: 300,
-                              height: 34,
-                              child: slider(),
-                               // ],
-                              //),
-                            )*/
+                            
                           ],
 
                         ),
@@ -425,16 +327,12 @@ class _AssetsAudioState extends State<AssetsAudio> {
                   width: 400,
                   height: 100,
                   child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
                         width: 100,
                         height: 100,
-                        child: //Icon(Icons.music_note),
-                         // Image.network(
-                           // 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0N_jzHQmEQ0lD9qkwpjROPLlfuLBwPg39zw&usqp=CAU',
-                             //fit: BoxFit.fill,)
+                        child: 
                           Image.asset('images/Bharat Manikarnika.jfif',fit: BoxFit.fill,)
                       ),
                       Container(
@@ -444,12 +342,10 @@ class _AssetsAudioState extends State<AssetsAudio> {
                             Container(
                               width: 300,
                               height: 66,
-                              //color: Colors.orange,
                               alignment: Alignment.topCenter,
                               child: Column(
                                 children: <Widget>[
                                   Text('Bharat Manikarnika Prasoon Joshi',style: TextStyle(
-                                                  //fontSize: 40,
                                                   foreground: Paint()
                                                   ..style = PaintingStyle.stroke
                                                   ..strokeWidth = 1
@@ -472,13 +368,7 @@ class _AssetsAudioState extends State<AssetsAudio> {
                             ),
 
                             ),
-                            /*Container(
-                              width: 300,
-                              height: 34,
-                              child: slider(),
-                               // ],
-                              //),
-                            )*/
+                            
                           ],
 
                         ),
@@ -498,197 +388,9 @@ class _AssetsAudioState extends State<AssetsAudio> {
                 ),
               )
             ],
-            
-          //)
-        //],
         
       ),
     
     );
   }
 }
-
-/*typedef void OnError(Exception exception);
-
-void main() {
-  runApp(new MaterialApp(home: new AssetsAudio()));
-}
-
-class AssetsAudio extends StatefulWidget {
-  @override
-  _AssetsAudioState createState() => new _AssetsAudioState();
-}
-
-class _AssetsAudioState extends State<AssetsAudio> {
-  Duration _duration = new Duration();
-  Duration _position = new Duration();
-  AudioPlayer advancedPlayer;
-  AudioCache audioCache;
-
-  @override
-  /*a() async {
-   
-    audio = await AudioCache().play('Jai Ho A.R. Rahman.mp3');                                     
-    
-      audio.play('Jai Ho A.R. Rahman.mp3');  
-  }*/
-
-  void initState(){
-    super.initState();
-    initPlayer();
-  }
-
-  void initPlayer(){
-    advancedPlayer = new AudioPlayer();
-    audioCache = new AudioCache(fixedPlayer: advancedPlayer);
-
-     advancedPlayer.onDurationChanged.listen((Duration d) {
-    print('Max duration: $d');
-    setState(() => _duration = d);
-  });
-
-    advancedPlayer.onAudioPositionChanged.listen((Duration  p) => {
-    print('Current position: $p');
-    setState(() => _position = p);
-  });
-
-    void seekToSecond(int second){
-    Duration newDuration = Duration(seconds: second);
-
-    advancedPlayer.seek(newDuration);
-  }
-
-    Widget slider() {
-    return Slider(
-        value: _position.inSeconds.toDouble(),
-        min: 0.0,
-        max: _duration.inSeconds.toDouble(),
-        onChanged: (double value) {
-          setState(() {
-            seekToSecond(value.toInt());
-            value = value;
-          });});
-  }
-
-
-  @override
-  // ignore: unused_element
-  Widget build(BuildContext context) {
-    return Container(
-      
-   /* );
-  }
-  }
-
-
-  class AssetsAudio extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(*/
-      color: Colors.amber,
-      child: Column(
-        //children: <Widget>[
-          //Row(
-            //color: Colors.green,
-            children: <Widget>[
-              Card(//color: Colors.green,
-              
-                child: Container(
-                  width: 400,
-                  height: 100,
-                  child: Row(
-                    //mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Container(
-                        width: 100,
-                        height: 100,
-                        child: //Icon(Icons.music_note),
-                          Image.network(
-                            'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcST9p6BnmYHfVDlt_z_wSe_rjl57PyzxBJOhg&usqp=CAU',
-                             fit: BoxFit.fill,)
-                          
-                      ),
-                      Container(
-                        /*alignment: Alignment.topCenter,
-                        width: 300,
-                        height: 100,
-                      
-                        color: Colors.amber,
-                        padding: EdgeInsets.only(left: 20),
-                        child: Text('Jai Ho'),*/
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: <Widget>[
-                            Container(
-                              width: 300,
-                              height: 50,
-                              //color: Colors.orange,
-                              alignment: Alignment.topCenter,
-                              child: Text('Jai Ho A.R. Rahman'),
-                            ),
-                            Container(
-                              width: 300,
-                              height: 50,
-                              //color: Colors.green.shade100,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: <Widget>[
-                                  IconButton(icon: Icon(Icons.play_arrow), onPressed: () {
-                                  									audioCache.play('Jai Ho A.R. Rahman.mp3');},),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.play_arrow), label: Text('play'),color: Colors.green,),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.pause), label: Text('pause')),
-                                  //RaisedButton.icon(onPressed: null, icon: Icon(Icons.stop), label: Text('stop')),
-                                  IconButton(icon: Icon(Icons.pause), onPressed: () {
-                                                                        advancedPlayer.pause();
-                                                                       // audio = AudioPlayer();
-                                                                        //audio.pause();
-                                                                },),
-                                  IconButton(icon: Icon(Icons.stop), onPressed: () {
-                                                                        advancedPlayer.stop();
-                                                                }),
-                                slider(),
-                                ],
-                              ),
-                            )
-                          ],
-
-                        ),
-                      ),
-                        //  Container(
-                          //color: Colors.orange,
-                          //width: 300,
-                        //height: 50,
-                        //alignment: Alignment.bottomLeft,
-                        //child: RaisedButton.icon(onPressed: null, icon: Icon(Icons.play_arrow), label: Text('play'))
-
-                        //  )
-                        ],
-                        
-                  )
-                ),
-              ),
-              Card(color: Colors.green,
-              
-                child: Container(
-                  width: 400,
-                  height: 100,
-                  child: Text('data'),
-                )
-              ),
-              Card(color: Colors.green,
-              
-                child: Container(
-                  width: 400,
-                  height: 100,
-                  child: Text('data'),
-                )
-              )
-            ],
-            
-          //)
-        //],
-      ),
-    );
-  }
-}}*/
