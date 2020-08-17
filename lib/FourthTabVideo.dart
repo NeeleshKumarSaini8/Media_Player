@@ -14,7 +14,7 @@ class NetworkVideoState extends State<NetworkVideo> {
   void initState() {
     super.initState();
     _controller = VideoPlayerController.network(
-      'https://github.com/NeeleshKumarSaini8/flutter-task1-videos/blob/master/videoplayback.mp4?raw=true',
+      'https://github.com/NeeleshKumarSaini8/flutter-task1-videos/blob/master/MS%20DHONI%20RETIREMENT%20--%20MAIN%20PAL%20DO%20PAL%20KA%20SHAYAR%20HU%20%20--%20Dhoni%20Instagram%20video%20--%20Dhoni%20The%20Legend_001.mp4?raw=true',
     );
 
     _controller.addListener(() {
